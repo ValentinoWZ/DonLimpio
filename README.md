@@ -32,6 +32,7 @@ Debido a que los datasets y los nlps ocupan mucho no estan subidos directamente 
 
 ### Estructura final
 
+```text
 DONLIMPIO/
 ├── Chino_dataset/          # Datasets para el modelo nlp en Chino
 ├── Español_dataset/        # Datasets para el modelo nlp en Español
