@@ -14,7 +14,24 @@ El proyecto ofrece una arquitectura modular que permite **entrenar, validar y de
 
 ## Estructura
 
-```text
+### Descargas Previas
+
+Debido a que los datasets y los nlps ocupan mucho no estan subidos directamente al repositorio de github, para descargarlos hay que acceder a los siguientes links:
+
+`Chino_dataset:`https://workdrive.zohopublic.eu/external/57e5b9a5ce0aa975a4df9b29976d13cc52932e4c77c00498cff527edc8d961f5/download
+
+`Español_dataset:`https://workdrive.zohopublic.eu/external/0b384eb9b3f73337b46129b95cb283a9b2f36ccebe77e7ee9db3e1ccc0d80ecf/download
+
+`Ingles_dataset:`https://workdrive.zohopublic.eu/external/a0d2694b87328eec5b73ac86d8e01875896c6525b09888afc907dbe6fa6104a8/download
+
+`output_zh:`https://workdrive.zohopublic.eu/external/3fbac00029d6924f29f671898ca56e39701ad71dfa7c9d2cb584da008a97c55d/download
+
+`output_es:`https://workdrive.zohopublic.eu/external/a29ce9875de3408d83e58c538a5f559bc109c419795dd6e0289d0d271d18879e/download
+
+`Test_dataset:`https://workdrive.zohopublic.eu/external/b87b050ba4a0732d2eeae87635b6eea4aef0ff8b77cc59488d4303003220eb16/download
+
+### Estructura final
+
 DONLIMPIO/
 ├── Chino_dataset/          # Datasets para el modelo nlp en Chino
 ├── Español_dataset/        # Datasets para el modelo nlp en Español
@@ -22,24 +39,19 @@ DONLIMPIO/
 ├── nlp_chino/              # Entorno de entrenamiento para el nlp Chino 
 │   ├── output_zh/          # Modelos resultantes
 │   ├── config.cfg          # Configuración del pipeline
-│   ├── dev_zh.spacy        # Datos validación binarios (.spacy)
 │ 	├── nlp_chino_dataset_creat.py # Script de conversión CSV -> .spacy
-│   └── train_zh.spacy.     # Datos entrenamiento binarios (.spacy)
 ├── nlp_español/            # Entorno de entrenamiento para el nlp Español 
 │   ├── output_es/          # Modelos resultantes para iteraciones impares
 │   ├── output_es_resume/   # Modelos resultantes para iteraciones pares
-│   ├── train_corpus/       # Datos entrenamiento binarios (.spacy)
 │   ├── config_impares.cfg  # Configuración del pipeline para iteraciones impares
 │   ├── config_pares.cfg    # Configuración del pipeline para iteraciones pares
 │   ├── config.cfg          # Configuración del pipeline base
-│ 	├── dev_es.spacy        # Datos validación binarios (.spacy)
 │   └── nlp_español_dataset_creat.py # Script de conversión CSV -> .spacy
 ├── nlp_ingles/             # Entorno de entrenamiento para el nlp Ingles
-│   ├── train_corpus/       # Datos entrenamiento binarios (.spacy)
 │   ├── config.cfg          # Configuración del pipeline
-│ 	├── dev_en.spacy        # Datos validación binarios (.spacy)
 │   └── nlp_ingles_dataset_creat.py # Script de conversión CSV -> .spacy
 ├── Test_dataset/           # Datos reservados para validación final
+├──	.gitignore              # Configuracion commits github 
 ├── manage.py               # API principal
 ├──	README.md               # Documentación
 ├── requirements_api.txt    # Dependencias para la API
