@@ -386,4 +386,3 @@ pip install -r requirements_notebook.txt
 
 Una vez tienes entrenado al mejor modelo puedes usar el notebook `spacy_results.ipynb`para generar gráficas y matrices de resultados, con el fin de observar la precisión y robustez de cada modelo. 
 Al abrir el notebook se puede observar como esta divido en tres secciones, una para cada nlp, ejecuta la sección pertinente al modelo que tengas entrenado.
-# DonLimpio
