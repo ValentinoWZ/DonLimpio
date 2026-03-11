@@ -328,7 +328,7 @@ El archivo `manage.py` es el que se ocupa de activar el servidor que recibe una 
 
 ```bash
 # Ejecutar el servidor (desde la raíz del proyecto)
-uvicorn manage:app --reload
+python -m uvicorn manage:app --reload
 ```
 
 ### Endpoint
